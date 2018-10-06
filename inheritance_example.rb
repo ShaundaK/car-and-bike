@@ -23,7 +23,7 @@ class Car < Mobile
   end
 end
 
-class Bike
+class Bike < Mobile
   def ring_bell
     puts "Ring ring!"
   end
@@ -33,4 +33,6 @@ car = Car.new
 p car.accelerate
 car.honk_horn
 
-
+bike = Bike.new
+p car.accelerate
+bike.ring_bell
